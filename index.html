@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anousone Phyakeo — Offensive Security & GRC Engineer</title>
-  <meta name="description" content="Anousone Phyakeo is a Lao offensive security engineer and GRC researcher based in Budapest. Penetration testing, mobile security, AI red teaming, and cybersecurity governance for Laos and the Mekong region.">
+  <meta name="description" content="Anousone Phyakeo is a Lao offensive security engineer in Budapest: penetration testing, mobile security, AI red teaming and cybersecurity governance for Laos.">
   <meta name="author" content="Anousone Phyakeo">
   <link rel="canonical" href="https://anousonephyakeo.github.io/">
 
@@ -24,9 +24,11 @@
   <link rel="me" href="https://www.linkedin.com/in/anousonepk/">
   <link rel="me" href="https://github.com/anousonephyakeo">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; script-src 'none'; base-uri 'self'; form-action 'none'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#1a1c26" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6f2ea" media="(prefers-color-scheme: light)">
+  <link rel="preload" href="/fonts/Fraunces-700.woff2" as="font" type="font/woff2" crossorigin>
 
   <script type="application/ld+json">
   {
@@ -70,6 +72,38 @@
   </script>
 
   <style>
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Fraunces-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/Fraunces-700.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/JetBrainsMono-400.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/JetBrainsMono-600.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
     :root {
       --color-surface: oklch(97% 0.012 85);
       --color-surface-raised: oklch(99% 0.006 85);
@@ -178,9 +212,10 @@
 <body>
   <div class="wrap">
     <header class="top">
-      <a href="/" aria-label="Home">anousone.phyakeo</a>
+      <a href="/">anousone.phyakeo</a>
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
         <a href="#work">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#research">Research</a>
@@ -213,8 +248,32 @@
         </div>
       </section>
 
+      <section id="expertise" aria-labelledby="expertise-heading">
+        <div class="split">
+          <h2 id="expertise-heading" data-n="02">What I do</h2>
+          <ul class="work">
+            <li>
+              <h3>Penetration testing</h3>
+              <p>Web, API and internal network penetration testing following PTES and the OWASP Web Security Testing Guide, with reports that serve both engineers and executives: CVSS-rated findings, reproducible proof, and a prioritised fix plan.</p>
+            </li>
+            <li>
+              <h3>Mobile application security</h3>
+              <p>Android and iOS app assessments against OWASP MASVS, including Flutter apps, runtime instrumentation with Frida, and review of certificate pinning, root detection and local data storage.</p>
+            </li>
+            <li>
+              <h3>AI red teaming</h3>
+              <p>Testing LLM-powered products and internal AI agents for prompt injection, data leakage and unsafe tool use, and mapping AI systems to the EU AI Act, ISO/IEC 42001 and the NIST AI RMF.</p>
+            </li>
+            <li>
+              <h3>Security governance in Laos</h3>
+              <p>Helping Lao banks and SMEs turn ISO/IEC 27001 and the 2026 Lao Law on Cybersecurity into practical controls that a small team can actually run.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section id="work" aria-labelledby="work-heading">
-        <h2 id="work-heading" data-n="02">Experience</h2>
+        <h2 id="work-heading" data-n="03">Experience</h2>
         <ul class="work">
           <li>
             <h3>Team Lead, IT Security</h3>
@@ -230,7 +289,7 @@
       </section>
 
       <section id="projects" aria-labelledby="projects-heading">
-        <h2 id="projects-heading" data-n="03">Open source</h2>
+        <h2 id="projects-heading" data-n="04">Open source</h2>
         <div class="projects">
           <a class="project featured" href="https://github.com/anousonephyakeo/aibom-guard">
             <span class="tag">Python · CLI · AI governance</span>
@@ -256,7 +315,7 @@
       </section>
 
       <section id="research" aria-labelledby="research-heading">
-        <h2 id="research-heading" data-n="04">Research &amp; recognition</h2>
+        <h2 id="research-heading" data-n="05">Research &amp; recognition</h2>
         <ul class="work">
           <li>
             <h3>Cybersecurity Governance in Lao e-Business SMEs</h3>
@@ -276,7 +335,7 @@
       </section>
 
       <section class="contact" id="contact" aria-labelledby="contact-heading">
-        <h2 id="contact-heading" data-n="05">Contact</h2>
+        <h2 id="contact-heading" data-n="06">Contact</h2>
         <p>Open to security roles in Budapest, research collaborations, and conversations about cybersecurity in Laos.</p>
         <p><a href="mailto:pkans007x@gmail.com">pkans007x@gmail.com</a><br>
            <a href="https://www.linkedin.com/in/anousonepk/" rel="me">LinkedIn</a> ·
